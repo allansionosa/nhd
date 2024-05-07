@@ -2,6 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  .overlay {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 1) 5%,
+      rgba(255, 255, 255, 0.09287464985994398) 100%
+    );
+  }
+  .about-overlay {
+    background: rgb(186, 12, 47);
+    background: linear-gradient(
+      90deg,
+      rgba(186, 12, 47, 0.7679446778711485) 6%,
+      rgba(152, 3, 11, 1) 100%
+    );
+  }
+}
+
 .ant-menu-item-selected {
   font-weight: 600 !important;
+}
+
+li.slick-active button {
+  background: #ba0c2f !important;
 }

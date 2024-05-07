@@ -63,7 +63,7 @@ export default function Navigation() {
   ];
   return (
     <section className="container">
-      <div className="flex justify-between items-center py-12 gap-5">
+      <div className="flex justify-between items-center py-5 xl:py-10 gap-5">
         <div className="flex justify-between items-center shrink-0">
           <Link href="/">
             <Image

@@ -28,8 +28,7 @@ export default function RootLayout({
               colorPrimary: '#BA0C2F',
               fontFamily: 'var(--font-gotham)',
               colorTextSecondary: '#FFFF00',
-              borderRadius: 500,
-              borderRadiusSM: 1000,
+              // borderRadiusLG: 1000,
             },
             components: {
               Menu: {
@@ -41,6 +40,17 @@ export default function RootLayout({
               },
               Button: {
                 paddingInlineSM: 14,
+                paddingBlockLG: 12,
+                paddingInlineLG: 30,
+                controlHeightLG: 55,
+                contentFontSizeLG: 18,
+                borderRadiusLG: 1000,
+                borderRadiusSM: 1000,
+              },
+              Carousel: {
+                dotHeight: 10,
+                dotWidth: 10,
+                dotActiveWidth: 10,
               },
               // Breadcrumb: {
               //   itemColor: '#FFFFFF',

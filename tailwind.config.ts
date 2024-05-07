@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     container: {
       center: true,
-      padding: '16px',
+      padding: '18px',
       screens: {
         lg: '1366px',
       },
@@ -21,7 +21,7 @@ const config: Config = {
       },
       colors: {
         primary: '#BA0C2F',
-        secondary: '#231F20',
+        secondary: '#58595b',
       },
       screens: {
         md: '978px',
