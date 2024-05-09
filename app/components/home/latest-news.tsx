@@ -1,3 +1,4 @@
+import { Button } from 'antd';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -89,6 +90,12 @@ export default function LatestNews() {
             </Link>
           ))}
         </div>
+      </div>
+
+      <div className="grid justify-center mt-12">
+        <Button type="primary" size="large">
+          See all news & updates
+        </Button>
       </div>
     </section>
   );
