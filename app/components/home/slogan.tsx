@@ -5,14 +5,14 @@ import Link from 'next/link';
 export default function Slogan() {
   return (
     <section className="overflow-hidden relative">
-      <div className="absolute -z-10 -bottom-48 -left-64">
-        <Image
+      <div className=" -z-10 -bottom-48 -left-64">
+        {/* <Image
           src="/clip-board.png"
           alt="clip-board"
           width={800}
           height={0}
           className="rotate-[20deg]"
-        />
+        /> */}
       </div>
       <div className="container ">
         <div className="flex -translate-y-4 z-10 justify-end">
@@ -56,6 +56,19 @@ export default function Slogan() {
               Learn more
             </Button>
           </Link>
+        </div>
+      </div>
+      <div className="absolute -z-10 -bottom-48 -left-64 md:-bottom-72 md:-left-80">
+        <div className="h-[600px] md:h-[800px] aspect-square relative translate-x-10 md:translate-x-14">
+          <Image
+            src="/clip-board.png"
+            alt="arrow"
+            fill
+            style={{
+              objectFit: 'contain',
+            }}
+            className="rotate-[20deg]"
+          />
         </div>
       </div>
     </section>

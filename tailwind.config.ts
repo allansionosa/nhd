@@ -18,6 +18,7 @@ const config: Config = {
     extend: {
       fontFamily: {
         gotham: ['var(--font-gotham)'],
+        mairy: ['var(--font-mairy)'],
       },
       colors: {
         primary: '#BA0C2F',

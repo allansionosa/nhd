@@ -8,6 +8,10 @@ const gotham = localFont({
   src: '../public/font/Gotham Book.otf',
   variable: '--font-gotham',
 });
+const mairy = localFont({
+  src: '../public/font/Mairy Book.otf',
+  variable: '--font-mairy',
+});
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -70,7 +74,9 @@ export default function RootLayout({
             },
           }}
         >
-          <body className={`${gotham.variable} ${gotham.className}`}>
+          <body
+            className={`${gotham.variable} ${gotham.className} ${mairy.variable}`}
+          >
             {children}
           </body>
         </ConfigProvider>
