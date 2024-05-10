@@ -63,6 +63,7 @@ export default function LatestNews() {
             <Link
               href={item.link}
               className="grid gap-5 group grid-cols-5 md:grid-cols-1"
+              key={i}
             >
               <div className="w-full h-32 sm:h-44 md:h-52 bg-slate-200 rounded-3xl overflow-hidden relative col-span-2">
                 <Image

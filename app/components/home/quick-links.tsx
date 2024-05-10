@@ -38,7 +38,7 @@ export default function QuickLinks() {
           className="relative px-5 py-20 overflow-hidden hover:bg-white/70 hover:text-primary/50 transition ease-in-out delay-50 md:h-[600px]"
           key={i}
         >
-          <h4 className=" text-4xl sm:text-5xl grid md:justify-center">
+          <h4 className="text-4xl sm:text-5xl grid md:justify-center">
             {item.title}
             <span className="block">{item.blockTitle}</span>
           </h4>

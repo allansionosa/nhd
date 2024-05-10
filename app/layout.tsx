@@ -3,6 +3,7 @@ import './globals.css';
 import { AntdRegistry } from '@ant-design/nextjs-registry';
 import { ConfigProvider } from 'antd';
 import localFont from 'next/font/local';
+import { Questrial } from 'next/font/google';
 
 const gotham = localFont({
   src: '../public/font/Gotham Book.otf',
@@ -11,6 +12,12 @@ const gotham = localFont({
 const mairy = localFont({
   src: '../public/font/Mairy Book.otf',
   variable: '--font-mairy',
+});
+
+const questrial = Questrial({
+  weight: '400',
+  subsets: ['latin'],
+  variable: '--font-questrial',
 });
 
 export const metadata: Metadata = {
@@ -56,6 +63,10 @@ export default function RootLayout({
                 dotWidth: 10,
                 dotActiveWidth: 10,
               },
+              Input: {
+                borderRadiusLG: 20,
+                paddingInlineLG: 18,
+              },
               // Breadcrumb: {
               //   itemColor: '#FFFFFF',
               //   linkColor: '#FFFFFF',
@@ -75,7 +86,7 @@ export default function RootLayout({
           }}
         >
           <body
-            className={`${gotham.variable} ${gotham.className} ${mairy.variable}`}
+            className={`${gotham.variable} ${gotham.className} ${mairy.variable} ${questrial.variable}`}
           >
             {children}
           </body>

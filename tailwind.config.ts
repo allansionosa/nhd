@@ -19,6 +19,7 @@ const config: Config = {
       fontFamily: {
         gotham: ['var(--font-gotham)'],
         mairy: ['var(--font-mairy)'],
+        questrial: ['var(--font-questrial)'],
       },
       colors: {
         primary: '#BA0C2F',

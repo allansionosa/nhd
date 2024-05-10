@@ -1,3 +1,4 @@
+import Footer from '../components/footer';
 import Navigation from '../components/nav';
 import NavigationBar from '../components/nav-bar';
 
@@ -10,6 +11,7 @@ export default function GeneralLayout({
     <main>
       <NavigationBar />
       {children}
+      <Footer />
     </main>
   );
 }
