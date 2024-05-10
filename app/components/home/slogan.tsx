@@ -18,7 +18,7 @@ export default function Slogan() {
         <div className="flex -translate-y-4 z-10 justify-end">
           <div className="h-24 md:h-32 aspect-square relative translate-x-10 md:translate-x-14">
             <Image
-              src="/arrow.svg"
+              src="/images/home/arrow.svg"
               alt="arrow"
               fill
               style={{
@@ -29,7 +29,7 @@ export default function Slogan() {
 
           <div className="h-24 md:h-32 aspect-square relative">
             <Image
-              src="/arrow.svg"
+              src="/images/home/arrow.svg"
               alt="arrow"
               fill
               style={{
@@ -61,7 +61,7 @@ export default function Slogan() {
       <div className="absolute -z-10 -bottom-48 -left-64 md:-bottom-72 md:-left-80">
         <div className="h-[600px] md:h-[800px] aspect-square relative translate-x-10 md:translate-x-14">
           <Image
-            src="/clip-board.png"
+            src="/images/home/clip-board.png"
             alt="arrow"
             fill
             style={{

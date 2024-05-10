@@ -24,7 +24,26 @@
 .ant-menu-item-selected {
   font-weight: 600 !important;
 }
+.slick-dots-bottom button {
+  background: gray !important;
+}
 
 li.slick-active button {
   background: #ba0c2f !important;
+}
+
+.ant-carousel .center .slick-list {
+  overflow: unset;
+  overflow-x: clip !important;
+}
+.slick-track {
+  display: flex !important;
+  gap: 1rem;
+}
+
+.center .slick-center {
+  transform: scaleY(1.1);
+}
+.center .slick-dots-bottom {
+  bottom: -60px !important;
 }

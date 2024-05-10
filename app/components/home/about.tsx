@@ -1,12 +1,11 @@
 import { Button } from 'antd';
-import Image from 'next/image';
 import Link from 'next/link';
 
 export default function About() {
   return (
     <section className="bg-primary text-white text-center tracking-wide relative">
       <div className="about-overlay py-20">
-        <div className="bg-left bg-cover md:bg-center md:bg-contain bg-no-repeat bg-[url('/pulse.svg')]">
+        <div className="bg-left bg-cover md:bg-center md:bg-contain bg-no-repeat bg-[url('/images/home/pulse.svg')]">
           <div className="about-overlay">
             <div className="container grid gap-y-12 py-28">
               <div>

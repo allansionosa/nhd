@@ -12,19 +12,19 @@ const quickLinksData: QuickLinksTypes[] = [
   {
     title: 'Schedule',
     blockTitle: 'an appointment',
-    img: '/calendar.svg',
+    img: '/images/home/calendar.svg',
     link: '',
   },
   {
     title: 'Create',
     blockTitle: 'an account',
-    img: '/user.svg',
+    img: '/images/home/user.svg',
     link: '',
   },
   {
     title: 'Check',
     blockTitle: 'online results',
-    img: '/checklist.svg',
+    img: '/images/home/checklist.svg',
     link: '',
   },
 ];

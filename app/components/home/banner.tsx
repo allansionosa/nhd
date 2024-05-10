@@ -11,7 +11,7 @@ export interface CarouseItems {
 
 const carouselData: CarouseItems[] = [
   {
-    img: '/carousel-img-1.jpg',
+    img: '/images/home/carousel-img-1.jpg',
     description: (
       <div className="grid gap-y-12">
         <div className="grid justify-center md:justify-start">
@@ -25,7 +25,7 @@ const carouselData: CarouseItems[] = [
     externalLink: '/',
   },
   {
-    img: '/carousel-img-1.jpg',
+    img: '/images/home/carousel-img-1.jpg',
     description: (
       <div className="grid gap-y-12">
         <div className="grid justify-center md:justify-start">
@@ -39,7 +39,7 @@ const carouselData: CarouseItems[] = [
     externalLink: '/',
   },
   {
-    img: '/carousel-img-1.jpg',
+    img: '/images/home/carousel-img-1.jpg',
     description: (
       <div className="grid gap-y-12">
         <div className="grid justify-center md:justify-start">
