@@ -6,6 +6,7 @@ import {
   FaLinkedin,
   FaRegCalendarAlt,
   FaMapMarkerAlt,
+  FaRegEnvelope,
 } from 'react-icons/fa';
 
 export default function Footer() {
@@ -52,6 +53,15 @@ export default function Footer() {
               </div>
               <p className="indent-7">B8 Bonifacio Highstreet, Taguig</p>
             </div>
+            <div>
+              <div className="flex gap-2 items-center pb-1">
+                <FaRegEnvelope className="text-xl" />
+                <p className="uppercase text-lg">Email</p>
+              </div>
+              <Link href="mailto:nexthealthdiagnostics@gmail.com">
+                <p className="indent-7">nexthealthdiagnostics@gmail.com</p>
+              </Link>
+            </div>
           </div>
 
           <div className="md:col-start-2 md:row-start-1">
@@ -96,6 +106,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
+
       <div className="text-sm text-primary py-2 px-5 text-center uppercase">
         &copy; {year} Next Health Diagnostics. ALL RIGHTS RESERVED |{' '}
         <Link
