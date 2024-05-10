@@ -36,7 +36,7 @@ li.slick-active button {
   overflow: unset;
   overflow-x: clip !important;
 }
-.slick-track {
+.center .slick-track {
   display: flex !important;
   gap: 1rem;
 }

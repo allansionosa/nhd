@@ -40,9 +40,35 @@ const data: CoreValuesTypes[] = [
 export default function CoreValues() {
   return (
     <section>
+      <div className="absolute -translate-y-8 md:-translate-y-12 right-0 z-10">
+        <div className="flex ">
+          <div className="h-16 md:h-24 aspect-square relative translate-x-7 md:translate-x-12">
+            <Image
+              src="/images/arrow.svg"
+              alt="arrow"
+              fill
+              style={{
+                objectFit: 'contain',
+              }}
+              className="grayscale"
+            />
+          </div>
+          <div className="h-16 md:h-24 aspect-square relative">
+            <Image
+              src="/images/arrow.svg"
+              alt="arrow"
+              fill
+              style={{
+                objectFit: 'contain',
+              }}
+            />
+          </div>
+        </div>
+      </div>
       <h3 className="bg-[#E5C4CD] text-center font-mairy pt-3 font-medium text-6xl text-primary">
         Core Values
       </h3>
+
       <div className="py-36 container text-primary text-center grid gap-y-12 gap-x-8 items-start sm:grid-cols-2 md:grid-cols-4 md:gap-x-12">
         {data.map((item) => (
           <div

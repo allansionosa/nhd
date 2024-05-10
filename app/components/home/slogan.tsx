@@ -5,20 +5,11 @@ import Link from 'next/link';
 export default function Slogan() {
   return (
     <section className="overflow-hidden relative">
-      <div className=" -z-10 -bottom-48 -left-64">
-        {/* <Image
-          src="/clip-board.png"
-          alt="clip-board"
-          width={800}
-          height={0}
-          className="rotate-[20deg]"
-        /> */}
-      </div>
       <div className="container ">
         <div className="flex -translate-y-4 z-10 justify-end">
           <div className="h-24 md:h-32 aspect-square relative translate-x-10 md:translate-x-14">
             <Image
-              src="/images/home/arrow.svg"
+              src="/images/arrow.svg"
               alt="arrow"
               fill
               style={{
@@ -29,7 +20,7 @@ export default function Slogan() {
 
           <div className="h-24 md:h-32 aspect-square relative">
             <Image
-              src="/images/home/arrow.svg"
+              src="/images/arrow.svg"
               alt="arrow"
               fill
               style={{
