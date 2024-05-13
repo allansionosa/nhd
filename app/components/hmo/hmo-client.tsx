@@ -5,6 +5,7 @@ import { Input, Empty } from 'antd';
 import { MdSearch } from 'react-icons/md';
 import React, { useState } from 'react';
 import Image from 'next/image';
+import SearchBar from '../search-bar';
 
 export default function HMOClient({ data }: { data: HMOTypes[] }) {
   const [filteredData, setFilteredData] = useState(data);
@@ -16,12 +17,10 @@ export default function HMOClient({ data }: { data: HMOTypes[] }) {
       )
     );
   };
+
   return (
-    <div className="container my-28">
-      <h1 className="font-mairy text-center uppercase text-4xl text-primary">
-        Accredited HMO Providers
-      </h1>
-      <div className="max-w-[562px] m-auto py-5 relative">
+    <div>
+      {/* <div className="max-w-[562px] m-auto py-5 relative">
         <Input
           size="large"
           allowClear
@@ -32,6 +31,12 @@ export default function HMOClient({ data }: { data: HMOTypes[] }) {
         <div className="absolute left-2 top-1/2 -translate-y-1/2 z-10">
           <MdSearch className="text-2xl text-primary" />
         </div>
+      </div> */}
+      <div className="max-w-[600px] m-auto py-5">
+        <SearchBar
+          placeholder="Search HMO"
+          onChange={(e) => handleSearch(e.target.value)}
+        />
       </div>
 
       <div className="pt-10">

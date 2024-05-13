@@ -67,6 +67,11 @@ export default function RootLayout({
                 borderRadiusLG: 20,
                 paddingInlineLG: 18,
               },
+              Select: {
+                borderRadiusLG: 20,
+                colorBorder: '#BA0C2F',
+                colorIcon: '#BA0C2F !important',
+              },
               // Breadcrumb: {
               //   itemColor: '#FFFFFF',
               //   linkColor: '#FFFFFF',
@@ -75,10 +80,7 @@ export default function RootLayout({
               //   lastItemColor: '#FFFF00',
               //   separatorColor: '#FFFFFF',
               // },
-              // Dropdown: {
-              //   controlItemBgActive: '#eff71a',
-              //   controlItemBgActiveHover: '#eff71a',
-              // },
+              Dropdown: {},
               // Collapse: {
               //   headerBg: '#ffffff',
               // },

@@ -33,7 +33,12 @@ const data: HMOTypes[] = [
 export default function HMO() {
   return (
     <section>
-      <HMOClient data={data} />
+      <div className="container py-28">
+        <h1 className="font-mairy text-center uppercase text-5xl text-primary">
+          Accredited HMO Providers
+        </h1>
+        <HMOClient data={data} />
+      </div>
       <ContactUs />
     </section>
   );
