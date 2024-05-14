@@ -21,6 +21,10 @@ export default function NavigationClient({
     setOpen(true);
   };
 
+  if (pathname.startsWith('/appointment')) {
+    pathname = '/appointment';
+  }
+
   const onClose = () => {
     setOpen(false);
   };
