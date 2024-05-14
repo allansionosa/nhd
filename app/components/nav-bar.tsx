@@ -5,7 +5,7 @@ import React, { useEffect, useState } from 'react';
 import Navigation from './nav';
 
 export default function NavigationBar() {
-  const [prevScrollPos, setPrevScrollPos] = useState(80);
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
 
   const handleScroll = () => {
@@ -16,21 +16,21 @@ export default function NavigationBar() {
     } else {
       setVisible(true);
     }
-    if (currentScrollPos > 80) {
-      setPrevScrollPos(currentScrollPos);
-    }
+
+    setPrevScrollPos(currentScrollPos);
   };
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
 
     return () => window.removeEventListener('scroll', handleScroll);
-  });
+  }, [prevScrollPos, visible]);
   return (
     <div
-      className={`bg-white z-50 transition-opacity duration-300 ${
-        visible ? 'opacity-100 top-0' : 'opacity-0'
-      } ${prevScrollPos > 100 ? 'sticky' : ''}`}
+      className={`bg-white z-50 sticky transition-opacity duration-300 ease-in-out top-0  ${
+        visible ? 'opacity-100' : 'opacity-0'
+      } ${prevScrollPos > 80 ? 'shadow-custom-light' : ''}`}
+      style={{ pointerEvents: visible ? 'auto' : 'none' }}
     >
       <Navigation />
     </div>
