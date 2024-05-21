@@ -72,20 +72,17 @@ export default function RootLayout({
                 colorIcon: '#BA0C2F !important',
               },
               Card: {
-                borderRadiusLG: 50,
+                borderRadiusLG: 30,
               },
-              // Breadcrumb: {
-              //   itemColor: '#FFFFFF',
-              //   linkColor: '#FFFFFF',
-              //   linkHoverColor: '#FFFFFF',
-              //   colorBgTextHover: '#2e4211',
-              //   lastItemColor: '#FFFF00',
-              //   separatorColor: '#FFFFFF',
-              // },
-              Dropdown: {},
-              // Collapse: {
-              //   headerBg: '#ffffff',
-              // },
+              Collapse: {
+                headerBg: '#ffffff',
+                borderRadiusLG: 20,
+                colorBorder: 'transparent',
+              },
+              DatePicker: {
+                borderRadius: 20,
+                paddingInline: 18,
+              },
             },
           }}
         >

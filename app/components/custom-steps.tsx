@@ -24,7 +24,7 @@ const items: StepItemTypes[] = [
 
 export default function CustomSteps({ current = 1 }: { current?: number }) {
   return (
-    <div className="flex justify-around rounded-xl items-center py-2 font-semibold sm:bg-transparent relative">
+    <div className="flex justify-around rounded-xl items-center py-2 font-semibold sm:bg-transparent relative mb-20 sm:mb-10">
       {items.map((item) => {
         const currentStep = current === item.id;
         return (
@@ -36,7 +36,7 @@ export default function CustomSteps({ current = 1 }: { current?: number }) {
                   : 'text-primary '
               } ${
                 item.id <= current
-                  ? 'opacity-100 scale-110'
+                  ? 'opacity-100 scale-110 border-primary'
                   : 'opacity-50 scale-100 '
               }`}
               //   onClick={() => setStep(item.id)}

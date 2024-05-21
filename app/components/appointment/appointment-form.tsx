@@ -1,8 +1,21 @@
 'use client';
 import { validatePhoneNumber } from '@/app/helpers';
 import { Button, Card, Form, Input } from 'antd';
+import { useRouter } from 'next/navigation';
+import { useState } from 'react';
 
 export default function AppointmentForm() {
+  const [isLoading, setIsLoading] = useState(false);
+  const router = useRouter();
+  const handleSubmit = (values: any) => {
+    console.log(values);
+    setIsLoading(true);
+    setTimeout(() => {
+      router.push('/appointment/apg/1123');
+      setIsLoading(false);
+    }, 3000);
+  };
+
   return (
     <div>
       <div className="max-w-[800px] px-5 m-auto md:-translate-y-20">
@@ -23,7 +36,7 @@ export default function AppointmentForm() {
             },
           }}
         >
-          <Form className="py-10">
+          <Form className="py-10" onFinish={handleSubmit}>
             <div className="grid md:grid-cols-2 md:gap-x-5">
               <Form.Item
                 name="fname"
@@ -86,7 +99,12 @@ export default function AppointmentForm() {
             </div>
 
             <div className="grid justify-end">
-              <Button type="primary" size="large" htmlType="submit">
+              <Button
+                type="primary"
+                size="large"
+                htmlType="submit"
+                loading={isLoading}
+              >
                 Submit
               </Button>
             </div>
