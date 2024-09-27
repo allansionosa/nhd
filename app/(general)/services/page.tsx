@@ -57,7 +57,6 @@ export default function Services() {
         <h1 className="font-mairy text-center uppercase text-5xl text-primary">
           Services
         </h1>
-
         <ServicesClient data={data} />
       </div>
     </section>

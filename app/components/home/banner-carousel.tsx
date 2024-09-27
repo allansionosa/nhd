@@ -1,6 +1,6 @@
 'use client';
 
-import { Button, Divider } from 'antd';
+import { Button } from 'antd';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Carousel } from 'antd';
@@ -50,8 +50,9 @@ export default function BannerCarousel({ data }: { data: CarouseItems[] }) {
               <div className="container grid items-center content-center h-full w-full text-center text-white md:text-left gap-y-14 px-12 md:px-28 xl:px-12">
                 <div>{item.description}</div>
                 <Link href="/">
-                  <Button type="primary" size="large">
-                    Book a consultation
+                  <Button type="primary" size="large" disabled>
+                    {/* Book a consultation */}
+                    Consultation Coming Soon
                   </Button>
                 </Link>
               </div>

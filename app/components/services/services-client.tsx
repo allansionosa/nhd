@@ -15,14 +15,14 @@ interface Options {
 
 const branchOptions: Options[] = [
   { label: 'Makati', value: 'makati' },
-  { label: 'Cavite', value: 'cavite' },
+  // { label: 'Cavite', value: 'cavite' },
 ];
 const hmoOptions: Options[] = [
-  { label: 'Avega', value: 'avega' },
-  {
-    label: 'Care Health Plus',
-    value: 'care-health-plus',
-  },
+  // { label: 'Avega', value: 'avega' },
+  // {
+  //   label: 'Care Health Plus',
+  //   value: 'care-health-plus',
+  // },
 ];
 
 export default function ServicesClient({ data }: { data: ServicesTypes[] }) {

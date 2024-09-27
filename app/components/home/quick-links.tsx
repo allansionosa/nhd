@@ -13,7 +13,7 @@ const quickLinksData: QuickLinksTypes[] = [
     title: 'Schedule',
     blockTitle: 'an appointment',
     img: '/images/home/calendar.svg',
-    link: '',
+    link: '/appointment',
   },
   {
     title: 'Create',

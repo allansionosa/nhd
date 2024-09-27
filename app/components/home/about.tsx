@@ -18,7 +18,7 @@ export default function About() {
                   fostering a proactive approach to lifestyle and wellness.
                 </p>
               </div>
-              <Link href="/">
+              <Link href="/services">
                 <Button size="large">
                   <p className="text-primary">Check our services</p>
                 </Button>

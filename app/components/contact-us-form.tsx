@@ -91,8 +91,8 @@ export default function ContactUsForm() {
         <Input.TextArea placeholder="Message" />
       </Form.Item>
       <div className="grid justify-end">
-        <Button type="primary" htmlType="submit">
-          Send Message
+        <Button type="primary" htmlType="submit" disabled>
+          Coming Soon
         </Button>
       </div>
     </Form>
