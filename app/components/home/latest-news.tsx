@@ -107,8 +107,8 @@ export default function LatestNews() {
               Hospital News
             </h3>
             <p className="text-center text-gray-600">
-              We're preparing important updates about our services and staff.
-              Check back soon for the latest hospital news.
+              We&apos;re preparing important updates about our services and
+              staff. Check back soon for the latest hospital news.
             </p>
           </div>
         </Card>
@@ -133,8 +133,9 @@ export default function LatestNews() {
               Health Tips
             </h3>
             <p className="text-center text-gray-600">
-              We're compiling expert health advice and tips from our medical
-              professionals. Visit again for valuable health information.
+              We&apos;re compiling expert health advice and tips from our
+              medical professionals. Visit again for valuable health
+              information.
             </p>
           </div>
         </Card>
@@ -142,8 +143,8 @@ export default function LatestNews() {
 
       <div className="mt-12 text-center">
         <p className="text-gray-700 max-w-2xl mx-auto">
-          We're committed to keeping our community informed about the latest
-          developments in healthcare and our hospital. Please check back
+          We&apos;re committed to keeping our community informed about the
+          latest developments in healthcare and our hospital. Please check back
           regularly for updates on news, events, and health information.
         </p>
         <a

@@ -12,8 +12,8 @@ const NotFound = () => {
             Under Construction
           </h1>
           <p className="text-xl text-gray-600 mb-8">
-            We're working hard to bring you something amazing. Please check back
-            soon!
+            We&apos;re working hard to bring you something amazing. Please check
+            back soon!
           </p>
           <Button
             type="primary"
